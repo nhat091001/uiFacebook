@@ -11,10 +11,8 @@ class _IndexScreenState extends State<IndexScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Màn hình chính'),
-        ),
         body: Container(
           child: Text('Màn hình chính'),
         ),
