@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_facebook/screen/home_screen.dart';
+import 'package:ui_facebook/view/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);

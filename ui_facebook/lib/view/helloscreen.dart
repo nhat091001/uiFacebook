@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:ui_facebook/screen/login_screen.dart';
+import 'package:ui_facebook/view/login_screen.dart';
 
 class HelloScreen extends StatefulWidget {
   const HelloScreen({Key? key}) : super(key: key);

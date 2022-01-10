@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ui_facebook/screen/NotificationScreen.dart';
-import 'package:ui_facebook/screen/PageScreen.dart';
-import 'package:ui_facebook/screen/index_screen.dart';
-import 'package:ui_facebook/screen/menu_screen.dart';
-import 'package:ui_facebook/screen/watch_screen.dart';
+import 'package:ui_facebook/view/NotificationScreen.dart';
+import 'package:ui_facebook/view/PageScreen.dart';
+import 'package:ui_facebook/view/index_screen.dart';
+import 'package:ui_facebook/view/menu_screen.dart';
+import 'package:ui_facebook/view/watch_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

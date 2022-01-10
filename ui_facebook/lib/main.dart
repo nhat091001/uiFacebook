@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_facebook/screen/helloscreen.dart';
+import 'package:ui_facebook/view/helloscreen.dart';
 
 void main() {
   runApp(MyApp());
