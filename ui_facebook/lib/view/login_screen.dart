@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_facebook/view/home_screen.dart';
+import 'package:ui_facebook/view/singup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -156,7 +157,12 @@ class _LoginScreenState extends State<LoginScreen> {
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                   onPressed: () {
-                    //SIGUP
+                    setState(() {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SigUpScreen()));
+                    });
                   },
                 ),
               ),
