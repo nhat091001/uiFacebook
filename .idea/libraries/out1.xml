@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="out1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ui_facebook/build/app/intermediates/project_dex_archive/debug/out/0862e31d9388dd4e385ec412a4e492894ac0a60ff646fe1d2dbabb959564a148_3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ui_facebook/build/app/intermediates/project_dex_archive/debug/out/0862e31d9388dd4e385ec412a4e492894ac0a60ff646fe1d2dbabb959564a148_2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ui_facebook/build/app/intermediates/project_dex_archive/debug/out/0862e31d9388dd4e385ec412a4e492894ac0a60ff646fe1d2dbabb959564a148_0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ui_facebook/build/app/intermediates/project_dex_archive/debug/out/0862e31d9388dd4e385ec412a4e492894ac0a60ff646fe1d2dbabb959564a148_1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

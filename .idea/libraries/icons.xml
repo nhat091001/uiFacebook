@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="icons">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ui_facebook/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/assets/icons/facebook.png.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ui_facebook/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/assets/icons/bell.png.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ui_facebook/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/assets/icons/messenger.png.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ui_facebook/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/assets/icons/watch-movie.png.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ui_facebook/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/assets/icons/search.png.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ui_facebook/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/assets/icons/facebook1.png.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
