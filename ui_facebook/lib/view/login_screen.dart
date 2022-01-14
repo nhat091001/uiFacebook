@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ui_facebook/view/home_screen.dart';
 import 'package:ui_facebook/view/singup_screen.dart';
-
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -10,10 +11,27 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  // final lan =
+  //
+  static Future<User?> loginUsingEmailPassword({required String email, required String password, required BuildContext context}) async {
+    FirebaseAuth auth=FirebaseAuth.instance;
+    User? user;
+    try{
+      UserCredential userCredential=await auth.signInWithEmailAndPassword(email: email, password: password);
+      user=userCredential.user;
+
+    }on FirebaseAuthException catch(e){
+      if(e.code =="user-not-found"){
+        print('No user found for that email');
+      }
+    }
+    return user;
+  }
 
   @override
   Widget build(BuildContext context) {
+    //
+    TextEditingController _emailController = TextEditingController();
+    TextEditingController _passwordController = TextEditingController();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -28,6 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 Container(
                   alignment: Alignment.center,
+                  margin: EdgeInsets.only(top: 20),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -58,7 +77,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
-                  child: TextField(
+                  child: TextFormField(
+                    controller: _emailController,
                     decoration: InputDecoration(
                         hintText: 'Số điện thoại hoặc email',
                         hintStyle: TextStyle(color: Colors.grey)),
@@ -69,7 +89,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
-                  child: TextField(
+                  child: TextFormField(
+                    controller: _passwordController,
                     decoration: InputDecoration(
                         hintText: 'Mật khẩu',
                         hintStyle: TextStyle(color: Colors.grey)),
@@ -89,13 +110,17 @@ class _LoginScreenState extends State<LoginScreen> {
                       style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.bold),
                     ),
-                    onPressed: () {
-                      setState(() {
+                    onPressed: () async {
+
+                      User ?user=await  loginUsingEmailPassword(email: _emailController.text, password: _passwordController.text, context: context);
+                      print(user);
+                      if(user!=null){
                         Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => HomeScreen()));
-                      });
+                      }
+
                     },
                   ),
                 ),
