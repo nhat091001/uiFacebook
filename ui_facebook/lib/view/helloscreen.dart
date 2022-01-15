@@ -6,7 +6,6 @@ import 'package:ui_facebook/view/login_screen.dart';
 
 class HelloScreen extends StatefulWidget {
   const HelloScreen({Key? key}) : super(key: key);
-
   @override
   _HelloScreenState createState() => _HelloScreenState();
 }
